@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Form from './components/form.js';
+import image from './images/daterange.jpg';
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+       <div className="image-section">
+        <img src = {image} alt="daterange" />
+        <p>Choose a date range</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+       </div>
+       <div className="form-section">
+        <Form />
+       </div>
+      </div>
     </div>
   );
 }
